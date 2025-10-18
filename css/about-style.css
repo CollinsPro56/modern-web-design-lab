@@ -1,0 +1,43 @@
+/* || The Template Stylesheet has the basic reset so won't be declared on the alternate */
+:root {
+}
+
+
+.frame {
+  width: 70dvw;
+  height: auto;
+  margin-inline: 20dvw 10dvw;
+  margin-block: 20px;
+  padding-inline: 20px;
+  padding-block: 0px 80px;
+  color: whitesmoke;
+  background: #000;
+  border-radius: 0 30px 0 30px;
+
+  h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-indent: -15dvw;
+    color: #000;
+  }
+  ul {
+    margin-block: 40px auto;
+
+    li {
+        list-style-position: inside;
+        margin-inline: 5px;
+        margin-block: 5px;
+        padding: 0px;
+
+        abbr {
+            text-decoration: none;
+        }
+    }
+  }
+}
+
+/* # Scoping 10px padding through CLASS-frame to limit at H1  */
+@scope (.frame) to (h1) {
+  * {
+    padding: 10px;
+  }
+/* || */

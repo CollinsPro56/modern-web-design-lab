@@ -1,0 +1,100 @@
+/* || The Template Stylesheet has the basic reset so won't be declared on the alternate */
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-indent: 10dvw;
+}
+
+.form-wrapper {
+  width: max-content;
+  height: calc(400px + 10rem);
+  margin-inline: 30dvw;
+  margin-block: 6px;
+}
+
+.SignIn {
+  label {
+    display: block;
+    position: relative;
+
+    input,
+    textarea {
+      width: 40dvw;
+      height: auto;
+      margin-block: 5px;
+      padding: 10px;
+      border-radius: 20px;
+      border: 2px solid black;
+      transition: 2s ease;
+    }
+
+    #user-text-message {
+      width: 40dvw;
+      height: 50dvh;
+    }
+
+    span {
+      position: absolute;
+      top: 14px;
+      left: 10px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.4);
+      transition: 0.5s ease;
+    }
+
+    input:focus + span,
+    textarea:focus + span {
+      top: -3px;
+      left: 10px;
+      padding: 0px 2px;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.6);
+      background-color: white;
+      border-radius: 5px;
+    }
+  }
+
+  button {
+    width: 60px;
+    height: auto;
+    padding: 5px;
+    margin-block: 30px;
+    border-radius: 10px;
+    color: aliceblue;
+    background: black;
+    cursor: pointer;
+  }
+}
+
+#anchor {
+  anchor-name: --my;
+}
+
+button.submit {
+  width: 60px;
+  height: auto;
+  padding: 5px;
+
+  position: absolute;
+  left: -60px;
+  position-anchor: --my;
+  position-area: bottom right;
+  position-visibility: always;
+
+  border-radius: 10px;
+  color: aliceblue;
+  background: black;
+}
+
+.image-panel {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  .connect a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
+    margin-inline: 20px;
+  }
+}

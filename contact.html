@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home Page for this website" />
+    <meta name="keywords" content="web-page, collins dev" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/contact.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-head">
+        <div class="logo">LOGO</div>
+        <nav aria-label="primary-navigation">
+          <ul>
+            <li class="nav-list"><a href="index.html">Home</a></li>
+            <li class="nav-list"><a href="about.html">About</a></li>
+            <li class="nav-list"><a href="service.html">Services</a></li>
+            <li class="nav-list">
+              <a href="#"><span class="no-wrap">Contact Us</span></a>
+            </li>
+            <li class="nav-list"><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-bottom">
+        <form action="" method="get">
+          <input type="search" name="search" id="search" placeholder="search" />
+        </form>
+        <figure class="flex-end">
+          <div class="profile-image"></div>
+          <figcaption></figcaption>
+        </figure>
+      </div>
+    </header>
+    <main>
+      <h1>Contact</h1>
+      <div class="form-wrapper">
+        <form action="" method="post" class="SignIn">
+          <label for="user-full-name">
+            <input type="text" name="user-full-name" id="user-full-name" /><span
+              >Full Name:</span
+            >
+          </label>
+          <label for="user-email">
+            <input type="email" name="user-email" id="user-email" /><span
+              >Email:</span
+            >
+          </label>
+          <!-- 
+        Using LABEL-element Instead of TEXTAREA-element for user-text-message << Because no Script to restrict users from resizing TEXTAREA-element sizing  -->
+          <label for="user-text-message" id="anchor">
+            <textarea
+              name="user-text-message"
+              id="user-text-message"
+              cols="30"
+              rows="20"
+              placeholder=""
+              style="resize: none"
+            ></textarea>
+            <span>Message:</span></label
+          >
+          <!-- <label for="user-text-message">
+          <inputs
+            type="textarea"
+            name="user-text-message"
+            id="user-text-message"
+          /><span>Message:</span>
+        </label> -->
+
+          <button type="submit" class="submit">Submit</button>
+        </form>
+      </div>
+      <div class="image-panel">
+        <div class="image-panel-wrapper just-left">
+          <img
+            src="tools/images/boy-543x960.jpg"
+            alt=""
+            width="50px"
+            height="50px"
+            style="z-index: 10"
+          />
+          <img
+            src="tools/images/boy-543x960.jpg"
+            alt=""
+            width="50px"
+            height="50px"
+            style="z-index: 100; right: 20px"
+          />
+          <img
+            src="tools/images/boy-543x960.jpg"
+            alt=""
+            width="50px"
+            height="50px"
+            style="z-index: 1000; right: 40px"
+          />
+          <img
+            src="tools/images/boy-543x960.jpg"
+            alt=""
+            width="50px"
+            height="50px"
+            style="z-index: 10000; right: 60px"
+          /><span>1000K+</span>
+        </div>
+        <span class="connect"
+          ><a href="mailto:vicayomide18@gmail.com"
+            >Email:vicayomide18@gmail.com</a
+          ><br /><a href="tel:+08116234365">Phone:08116234365</a></span
+        >
+      </div>
+    </main>
+    <footer>
+      <div class="logo">LOGO</div>
+      <nav aria-label="footer-navigation">
+        <ul>
+          <li class="nav-list"><a href="">Home</a></li>
+          <li class="nav-list"><a href="">About</a></li>
+          <li class="nav-list"><a href="">Services</a></li>
+          <li class="nav-list"><a href="" class="no-wrap">Contact Us</a></li>
+          <li class="nav-list"><a href="">Blog</a></li>
+        </ul>
+      </nav>
+      <button type="submit">SignUp</button>
+      <figure class="flex-end">
+        <div class="profile-image"></div>
+        <figcaption></figcaption>
+      </figure>
+      <div class="copy">&copy; 2025 Web Dev Company. All rights reserved.</div>
+    </footer>
+  </body>
+</html>

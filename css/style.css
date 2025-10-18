@@ -1,0 +1,222 @@
+/* || The Template Stylesheet has the basic reset so won't be declared on the alternate */
+
+:root {
+  --bg-color: red;
+}
+
+.header-head {
+  .logo {
+    font-weight: 700;
+    color: white;
+  }
+
+  nav ul {
+    a:any-link {
+      color: whitesmoke;
+      text-decoration: none;
+    }
+  }
+}
+
+body {
+  min-width: 100vh;
+  min-height: 100vh;
+  background: transparent url("../tools/images/background.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  display: grid;
+  grid: 30vh 1fr 20vh / 1fr;
+}
+
+/* footer {
+  position: absolute;
+  bottom: 0px;
+} */
+
+/* || Main Style */
+h1,
+p.major,
+form.query {
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+p.major {
+  font-size: 18px;
+  color: white;
+}
+
+/* || Form Style */
+input.query {
+  margin: 20px;
+  padding: 15px;
+  min-width: 50vw;
+  height: 50px;
+  outline: 0px;
+  color: aliceblue;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 25px;
+  font-size: 0.99em;
+  font-style: oblique;
+}
+
+/* || SigningIn Form Style */
+.section-form {
+  background: white;
+  width: 60vw;
+  height: auto;
+  position: fixed;
+  top: 5vh;
+  left: 20vw;
+  padding: 15px;
+  border-radius: 0 30px;
+
+  h2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin: 10px;
+  }
+
+  p {
+    margin: 10px;
+    font-weight: 500;
+  }
+
+  ul {
+    margin-block: 40px;
+  }
+
+  ul li {
+    margin: 10px 20%;
+    padding: 8px;
+    width: 60%;
+    height: auto;
+    font-weight: 700;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    list-style-type: none;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    a:link {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+    }
+
+    a:visited,
+    a:hover,
+    a:focus,
+    a:active {
+      text-decoration: underline;
+      color: rgba(0, 0, 0, 0.7);
+      font-weight: 600;
+      font-size: 0.98em;
+    }
+  }
+
+  .SignIn {
+    label {
+      display: block;
+      position: relative;
+
+      input {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 20px;
+        transition: 2s ease;
+      }
+
+      span {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.6);
+        transition: 0.5s ease;
+      }
+
+      input:focus + span {
+        top: -10px;
+        left: 8px;
+        padding: 4px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.9);
+        background-color: white;
+        border-radius: 5px;
+      }
+    }
+
+    button {
+      width: 60px;
+      height: auto;
+      padding: 5px;
+      margin-inline: 45% auto;
+      border-radius: 10px;
+      color: aliceblue;
+      background: black;
+      cursor: pointer;
+    }
+  }
+
+  .p-form {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    margin-block: 20px;
+
+    a {
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+}
+/* ||### */
+
+/* || SigningIn Form Style
+-- || The Form Popover Animation */
+
+[popover]:popover-open {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+[popover] {
+  opacity: 0;
+  transform: scaleX(0);
+  transition: opacity 0.7s, transform 0.7s, overlay 0.7s allow-discrete,
+    display 0.7s allow-discrete;
+}
+
+@starting-style {
+  [popover]:popover-open {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+}
+
+[popover]:popover-open::backdrop {
+  background: black;
+  opacity: 0.5;
+  transform: scaleX(1);
+}
+
+[popover]::backdrop {
+  background: black;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: opacity 0.7s, transform 0.7s, overlay 0.7s allow-discrete;
+}
+
+@starting-style {
+  [popover]:popover-open::backdrop {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+}
+/* ||###    */

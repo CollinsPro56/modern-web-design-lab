@@ -1,0 +1,56 @@
+/* || The Template Stylesheet has the Basic Reset so won't be declared on the alternate */
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+div.wrapper {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+}
+
+h1 {
+  grid-area: auto / 1 / auto / 3;
+  place-self: start center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+div.low-wrapper {
+  grid-area: auto / 3 / auto / 8;
+}
+
+section.container {
+  margin: 20px;
+  padding: 10px;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: -1px -1px 8px 1px hsla(0, 0%, 0%, 0.1),
+    1px 4px 8px 0px hsla(0, 0%, 0%, 0.3);
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 15px;
+}
+
+h2 {
+  margin-block: 4px 20px;
+  font-size: large;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+figure img {
+  border-radius: 10px 0px 0px 10px;
+}
+
+p {
+  margin-block: 4px;
+}
+
+.image-panel {
+  position: sticky;
+  bottom: 0px;
+  background-color: white;
+}
