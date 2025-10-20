@@ -45,15 +45,57 @@ It also serves as a stepping stone in my continuous journey toward becoming a **
 
 ---
 
-## 🧱 Folder Structure
+## � Folder Structure
+
+```
+modern-web-design-lab/
+├── about.html
+├── blog.html
+├── contact.html
+├── index.html
+├── service.html
+├── README.md
+├── assets/
+│   ├── images/
+│   │   ├── background.jpg
+│   │   ├── boy-543x960.jpg
+│   │   └── dotter-background.jpg
+│   └── project-screenshot/
+│       ├── about.png
+│       ├── blog.png
+│       ├── contact-us.png
+│       ├── fade-index.png
+│       ├── index.png
+│       ├── service.png
+│       ├── signedIn-index.png
+│       └── signUp.png
+├── css/
+│   ├── about-style.css
+│   ├── blog-style.css
+│   ├── contact.css
+│   ├── main.css
+│   ├── service.css
+│   └── style.css
+└── js/
+	└── script.js
+```
 
 ---
 
 ## 📸 Project Preview
 
-> _(You can add a screenshot or demo GIF of your design here)_
+> _(Preview or screenshot GIF of the project design here)_
 
-![Project Preview](https://via.placeholder.com/800x400?text=Project+Screenshot+Here)
+<!-- markdownlint-disable MD033 -->
+<img src="assets/project-screenshot/index.png" style="max-width: 800px; height: auto;" alt="Web Preview">
+<img src="assets/project-screenshot/fade-index.png" style="max-width: 800px; height: auto;" alt="Web Preview">
+<img src="assets/project-screenshot/signUp.png" style="max-width: 800px; height: auto;" alt="Web Preview">
+<img src="assets/project-screenshot/signedIn-index.png" style="max-width: 800px; height: auto;" alt="Web Preview">
+<img src="assets/project-screenshot/about.png" style="max-width: 800px; height: auto;" alt="Web Preview">
+<img src="assets/project-screenshot/blog.png" style="max-width: 800px; height: auto;" alt="Web Preview">
+<img src="assets/project-screenshot/contact-us.png" style="max-width: 800px; height: auto;" alt="Web Preview">
+<img src="assets/project-screenshot/service.png" style="max-width: 800px; height: auto;" alt="Web Preview">
+<!-- markdownlint-enable MD033 -->
 
 ---
 
