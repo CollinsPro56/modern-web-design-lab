@@ -21,7 +21,7 @@
 body {
   min-width: 100vh;
   min-height: 100vh;
-  background: transparent url("../tools/images/background.jpg") no-repeat;
+  background: transparent url("../assets/images/background.jpg") no-repeat;
   background-size: cover;
   background-attachment: scroll;
   display: grid;

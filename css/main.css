@@ -14,7 +14,7 @@
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.8)
     ),
-    url("../tools/images/dotter-background.jpg") repeat;
+    url("../assets/images/dotter-background.jpg") repeat;
   background-size: 250px;
   background-attachment: fixed;
   background-blend-mode: screen;
