@@ -20,211 +20,214 @@
   background-blend-mode: screen;
 }
 
-/* ### Header Styling ### */
-header {
-  width: 80vw;
-  height: 8vw;
+@media screen and (768px <= width <= 2500px) {
+  /* ### Header Styling ### */
 
-  margin: 10px auto 5px;
-  border: 2px solid black;
-  border-radius: 5vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+  header {
+    width: 80vw;
+    height: 8vw;
 
-  .header-head {
-    width: 75%;
-    height: auto;
-    flex: 1 1 auto;
+    margin: 10px auto 5px;
+    border: 2px solid black;
+    border-radius: 5vw;
     display: flex;
-    font-weight: 200;
     flex-direction: row;
     flex-wrap: nowrap;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
-    .logo {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 24px;
-      font-weight: 700;
+    .header-head {
+      width: 75%;
+      height: auto;
+      flex: 1 1 auto;
+      display: flex;
+      font-weight: 200;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .logo {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        column-gap: 5%;
+
+        a:any-link {
+          text-decoration: none;
+        }
+      }
     }
 
-    nav ul {
-      list-style-type: none;
+    .header-bottom {
+      width: 25%;
+      height: auto;
+      flex: 1 1 auto;
       display: flex;
-      column-gap: 5%;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+      column-gap: 4%;
 
-      a:any-link {
-        text-decoration: none;
+      button {
+        width: 60px;
+        height: auto;
+        padding: 5px;
+        border-radius: 10px;
+        color: aliceblue;
+        background: black;
+        cursor: pointer;
+      }
+
+      form {
+        width: 10dvw;
+        height: auto;
+        padding: 5px;
+        border-radius: 10px;
+        color: aliceblue;
+        background: transparent;
+        cursor: pointer;
+
+        input {
+          width: 10dvw;
+          height: auto;
+          padding: 5px;
+          border-radius: 20px;
+          color: black;
+          background: transparent;
+          cursor: pointer;
+        }
+      }
+
+      figure div {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 15px;
       }
     }
   }
 
-  .header-bottom {
-    width: 25%;
-    height: auto;
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    column-gap: 4%;
+  /* || Image Panel Design */
+  .image-panel {
+    .image-panel-wrapper {
+      width: 300px;
+      height: auto;
+      margin: 0px auto;
+
+      img {
+        border-radius: 25px;
+        border: 3px solid white;
+        position: relative;
+      }
+
+      span {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: large;
+        font-size: 18px;
+        color: white;
+        position: relative;
+        top: -15px;
+        right: 30px;
+      }
+    }
+
+    .just-left {
+      margin-inline: 20px;
+
+      span {
+        color: black;
+      }
+    }
+  }
+
+  /* ## Generic Class ## */
+  .no-wrap {
+    white-space: nowrap;
+  }
+  /* ##  ## */
+
+  /* ## Footer Styling ## */
+  footer {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2em;
+    color: whitesmoke;
+    background-color: rgb(37, 37, 37);
+
+    .logo {
+      grid-area: 1 / 1 / -2 / 3;
+      place-self: center start;
+    }
+
+    nav {
+      grid-area: 1 / 8 / -1 / 9;
+      font-size: 14px;
+
+      ul {
+        list-style-type: none;
+        display: grid;
+        gap: 6px;
+        place-content: space-between center;
+
+        a:link {
+          color: aliceblue;
+          text-decoration: none;
+        }
+
+        a:visited,
+        a:hover,
+        a:focus,
+        a:active {
+          text-decoration: underline;
+          color: #f0f8ff9b;
+          font-weight: 500;
+          font-size: 0.98em;
+        }
+      }
+    }
 
     button {
       width: 60px;
-      height: auto;
+      height: 2.5em;
+      grid-area: 2 / 11 / 3 / 12;
+      place-self: center end;
       padding: 5px;
       border-radius: 10px;
-      color: aliceblue;
-      background: black;
+      color: black;
+      background: aliceblue;
       cursor: pointer;
     }
 
-    form {
-      width: 10dvw;
-      height: auto;
-      padding: 5px;
-      border-radius: 10px;
-      color: aliceblue;
-      background: transparent;
-      cursor: pointer;
-
-      input {
-        width: 10dvw;
-        height: auto;
-        padding: 5px;
-        border-radius: 20px;
-        color: black;
-        background: transparent;
-        cursor: pointer;
-      }
+    figure {
+      grid-area: 2 / 12 / 3 / 13;
+      place-self: center start;
+      margin: 4%;
     }
 
     figure div {
       width: 30px;
       height: 30px;
-      border: 1px solid black;
+      border: 1px solid brown;
+      background: aliceblue;
       border-radius: 15px;
     }
-  }
-}
 
-/* || Image Panel Design */
-.image-panel {
-  .image-panel-wrapper {
-    width: 300px;
-    height: auto;
-    margin: 0px auto;
-
-    img {
-      border-radius: 25px;
-      border: 3px solid white;
-      position: relative;
+    .copy {
+      font-size: 14px;
+      grid-area: 3 / 1 / 4 / 5;
+      place-self: center start;
     }
-
-    span {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: large;
-      font-size: 18px;
-      color: white;
-      position: relative;
-      top: -15px;
-      right: 30px;
-    }
-  }
-
-  .just-left {
-    margin-inline: 20px;
-
-    span {
-      color: black;
-    }
-  }
-}
-
-/* ## Generic Class ## */
-.no-wrap {
-  white-space: nowrap;
-}
-/* ##  ## */
-
-/* ## Footer Styling ## */
-footer {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  padding: 2em;
-  color: whitesmoke;
-  background-color: rgb(37, 37, 37);
-
-  .logo {
-    grid-area: 1 / 1 / -2 / 3;
-    place-self: center start;
-  }
-
-  nav {
-    grid-area: 1 / 8 / -1 / 9;
-    font-size: 14px;
-
-    ul {
-      list-style-type: none;
-      display: grid;
-      gap: 6px;
-      place-content: space-between center;
-
-      a:link {
-        color: aliceblue;
-        text-decoration: none;
-      }
-
-      a:visited,
-      a:hover,
-      a:focus,
-      a:active {
-        text-decoration: underline;
-        color: #f0f8ff9b;
-        font-weight: 500;
-        font-size: 0.98em;
-      }
-    }
-  }
-
-  button {
-    width: 60px;
-    height: 2.5em;
-    grid-area: 2 / 11 / 3 / 12;
-    place-self: center end;
-    padding: 5px;
-    border-radius: 10px;
-    color: black;
-    background: aliceblue;
-    cursor: pointer;
-  }
-
-  figure {
-    grid-area: 2 / 12 / 3 / 13;
-    place-self: center start;
-    margin: 4%;
-  }
-
-  figure div {
-    width: 30px;
-    height: 30px;
-    border: 1px solid brown;
-    background: aliceblue;
-    border-radius: 15px;
-  }
-
-  .copy {
-    font-size: 14px;
-    grid-area: 3 / 1 / 4 / 5;
-    place-self: center start;
   }
 }
